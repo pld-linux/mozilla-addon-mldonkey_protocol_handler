@@ -2,6 +2,7 @@
 # - integrate with browser-common to handle all mozilla based browsers
 # - better package name?
 Summary:	Mozilla MLdonkey/eMule Protocol Handler
+Summary(pL):	Obs³uga protoko³u MLdonkey/eMule dla Mozilli
 %define		vendor_name mldonkey_protocol_handler
 Name:		mozilla-addon-%{vendor_name}
 Version:	1.7
@@ -23,13 +24,25 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is a protocol handler for Mozilla and Firefox (see
-www.mozilla.org) that forwards some link types to a running MLdonkey
-(see www.mldonkey.net) or eMule (see www.emule-project.net) client.
-Supported protocols are ed2k:, magnet: and sig2dat:. For eMule, only
-ed2k: is supported, of course.
+http://www.mozilla.org/) that forwards some link types to a running
+MLdonkey (see http://www.mldonkey.net/) or eMule (see
+http://www.emule-project.net/) client. Supported protocols are ed2k:,
+magnet: and sig2dat:. For eMule, only ed2k: is supported, of course.
 
 The protocol handler is implemented in JavaScript and should run on
 any platform supported by Mozilla or Firefox.
+
+%description -l pl
+Ten pakiet zawiera obs³ugê protoko³u dla Mozilli i Firefoksa
+(http://www.mozilla.org/) przekazuj±c± niektóre rodzaje odno¶ników do
+dzia³aj±cego klienta MLdonkey (http://www.mldonkey.net/) lub eMule
+(http://www.emule-project.net/). Obs³ugiwane protoko³y to ed2k:,
+magnet: i sig2dat:. Oczywi¶cie dla eMule obs³uginwany jest tylko
+ed2k:.
+
+Obs³uga protoko³u jest zaimplementowana w JavaScripcie i powinna
+dzia³aæ na dowolnej platformie obs³ugiwanej przez Mozillê lub
+Firefoksa.
 
 %prep
 %setup -qc

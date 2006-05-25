@@ -2,7 +2,7 @@
 # - integrate with browser-common to handle all mozilla based browsers
 # - better package name?
 Summary:	Mozilla MLdonkey/eMule Protocol Handler
-Summary(pL):	Obs³uga protoko³u MLdonkey/eMule dla Mozilli
+Summary(pl):	Obs³uga protoko³u MLdonkey/eMule dla Mozilli
 %define		vendor_name mldonkey_protocol_handler
 Name:		mozilla-addon-%{vendor_name}
 Version:	1.7

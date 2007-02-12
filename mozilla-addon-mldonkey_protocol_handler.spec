@@ -2,7 +2,7 @@
 # - integrate with browser-common to handle all mozilla based browsers
 # - better package name?
 Summary:	Mozilla MLdonkey/eMule Protocol Handler
-Summary(pl):	Obs≥uga protoko≥u MLdonkey/eMule dla Mozilli
+Summary(pl.UTF-8):   Obs≈Çuga protoko≈Çu MLdonkey/eMule dla Mozilli
 %define		vendor_name mldonkey_protocol_handler
 Name:		mozilla-addon-%{vendor_name}
 Version:	1.7
@@ -32,16 +32,16 @@ magnet: and sig2dat:. For eMule, only ed2k: is supported, of course.
 The protocol handler is implemented in JavaScript and should run on
 any platform supported by Mozilla or Firefox.
 
-%description -l pl
-Ten pakiet zawiera obs≥ugÍ protoko≥u dla Mozilli i Firefoksa
-(http://www.mozilla.org/) przekazuj±c± niektÛre rodzaje odno∂nikÛw do
-dzia≥aj±cego klienta MLdonkey (http://www.mldonkey.net/) lub eMule
-(http://www.emule-project.net/). Obs≥ugiwane protoko≥y to ed2k:,
-magnet: i sig2dat:. Oczywi∂cie dla eMule obs≥uginwany jest tylko
+%description -l pl.UTF-8
+Ten pakiet zawiera obs≈Çugƒô protoko≈Çu dla Mozilli i Firefoksa
+(http://www.mozilla.org/) przekazujƒÖcƒÖ niekt√≥re rodzaje odno≈õnik√≥w do
+dzia≈ÇajƒÖcego klienta MLdonkey (http://www.mldonkey.net/) lub eMule
+(http://www.emule-project.net/). Obs≈Çugiwane protoko≈Çy to ed2k:,
+magnet: i sig2dat:. Oczywi≈õcie dla eMule obs≈Çuginwany jest tylko
 ed2k:.
 
-Obs≥uga protoko≥u jest zaimplementowana w JavaScripcie i powinna
-dzia≥aÊ na dowolnej platformie obs≥ugiwanej przez MozillÍ lub
+Obs≈Çuga protoko≈Çu jest zaimplementowana w JavaScripcie i powinna
+dzia≈Çaƒá na dowolnej platformie obs≈Çugiwanej przez Mozillƒô lub
 Firefoksa.
 
 %prep

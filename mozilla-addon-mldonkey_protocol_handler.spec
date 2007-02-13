@@ -2,7 +2,7 @@
 # - integrate with browser-common to handle all mozilla based browsers
 # - better package name?
 Summary:	Mozilla MLdonkey/eMule Protocol Handler
-Summary(pl.UTF-8):   Obsługa protokołu MLdonkey/eMule dla Mozilli
+Summary(pl.UTF-8):	Obsługa protokołu MLdonkey/eMule dla Mozilli
 %define		vendor_name mldonkey_protocol_handler
 Name:		mozilla-addon-%{vendor_name}
 Version:	1.7

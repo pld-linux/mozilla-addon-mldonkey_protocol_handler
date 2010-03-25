@@ -1,15 +1,15 @@
 # TODO
 # - integrate with browser-common to handle all mozilla based browsers
 # - better package name?
+%define		vendor_name mldonkey_protocol_handler
 Summary:	Mozilla MLdonkey/eMule Protocol Handler
 Summary(pl.UTF-8):	Obsługa protokołu MLdonkey/eMule dla Mozilli
-%define		vendor_name mldonkey_protocol_handler
 Name:		mozilla-addon-%{vendor_name}
 Version:	1.7
 Release:	0.1
 License:	MPL 1.1/GPL 2.0/LGPL 2.1
 Group:		X11/Applications/Networking
-Source0:	http://www.informatik.uni-oldenburg.de/~dyna/mldonkey/1.7/%{vendor_name}-1.7.xpi
+Source0:	http://www.informatik.uni-oldenburg.de/~dyna/mldonkey/1.7/%{vendor_name}-%{version}.xpi
 # Source0-md5:	20be3ad138fb9f6bec908591db14585e
 Source1:	gen-installed-chrome.sh
 URL:		http://www.informatik.uni-oldenburg.de/~dyna/mldonkey/
@@ -59,10 +59,12 @@ install -d $RPM_BUILD_ROOT%{_chromedir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%{_sbindir}/mozilla-chrome+xpcom-generate
+if [ "$1" = 1 ]; then
+	%{_sbindir}/mozilla-chrome+xpcom-generate
+fi
 
 %postun
-%{_sbindir}/mozilla-chrome+xpcom-generate
+[ ! -x %{_sbindir}/mozilla-chrome+xpcom-generate ] || %{_sbindir}/mozilla-chrome+xpcom-generate
 
 %files
 %defattr(644,root,root,755)
